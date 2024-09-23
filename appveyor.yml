@@ -1,0 +1,10 @@
+version: 1.0.{build}
+image: Visual Studio 2019
+configuration:
+  - Release
+build_script:
+  - npm install
+  - npm run build
+
+artifacts:
+  - dist/**/*

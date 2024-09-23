@@ -1,0 +1,28 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.game-field {
+  width: 400px;
+  height: 400px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  position: relative;
+  border: 1px solid #000;
+}
+
+.game-field > div {
+  border: 1px solid #ccc;
+}
+
+#gnome {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  display: none;
+}
